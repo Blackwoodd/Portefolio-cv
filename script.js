@@ -3,7 +3,7 @@ const totalSlides = document.querySelectorAll('.carousel-item').length;
 const carouselInner = document.querySelector('.carousel-inner');
 
 function updateCarousel() {
-    const offset = -currentIndex * 100; // Décalage en pourcentage
+    const offset = -currentIndex * 50; // Décalage en %
     carouselInner.style.transform = `translateX(${offset}%)`;
 }
 
@@ -24,3 +24,4 @@ function prevSlide() {
     }
     updateCarousel();
 }
+
