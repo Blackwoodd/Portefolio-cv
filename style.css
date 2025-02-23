@@ -54,13 +54,21 @@ ul {
   overflow: hidden;
 }
 
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Permet de bien aligner les items */
+}
+
 .carousel-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  min-width: 100%;
+  min-width: 100%; /* Chaque item prend 100% de la largeur */
+  flex-shrink: 0; /* Empêche la réduction */
 }
+
 
 .carousel-item img {
   width: 100%;
