@@ -57,23 +57,24 @@ ul {
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Permet de bien aligner les items */
+  width: 200%; /* Doit être au moins 2x la taille d'un groupe */
 }
 
 .carousel-item {
+  width: 50%; /* Chaque groupe de 4 images occupe 50% du carrousel */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  min-width: 100%; /* Chaque item prend 100% de la largeur */
-  flex-shrink: 0; /* Empêche la réduction */
+  flex-shrink: 0;
 }
 
 
+
 .carousel-item img {
-  width: 10%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Prend toute la largeur de sa case */
+  height: auto; /* Garde les proportions */
+  object-fit: cover; /* Évite les déformations */
   border-radius: 8px;
 }
 
