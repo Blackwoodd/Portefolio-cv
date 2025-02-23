@@ -45,7 +45,7 @@ ul {
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 200px; /* Ajustable */
+  max-width: 600px; /* Ajustable */
   margin: auto;
 }
 
@@ -71,7 +71,7 @@ ul {
 
 
 .carousel-item img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
