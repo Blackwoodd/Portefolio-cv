@@ -1,4 +1,4 @@
-/* ----- NAV BAR ----- */
+/* ----- NAVIGATION ----- */
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,37 +33,35 @@ li a:hover {
   background-color: white;
 }
 
-/* ----- CARROUSEL ----- */
+/* ----- CAROUSEL CONTAINER ----- */
 .carousel-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; /* Taille max, ajustable */
   margin: auto;
-  overflow: hidden; /* Important pour cacher les autres groupes */
+  overflow: hidden; /* Cache ce qui dépasse (cache les autres groupes) */
   position: relative;
 }
 
-.carousel {
-  width: 100%;
-  overflow: hidden;
-}
-
+/* ----- CAROUSEL INNER ----- */
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%; /* 3 groupes = 3 x 100% */
+  width: calc(100% * 3); /* 3 groupes = 3 fois la largeur du container */
 }
 
+/* ----- CAROUSEL ITEM (chaque groupe de 4 images) ----- */
 .carousel-item {
-  width: 100%; /* Prend toute la largeur visible */
+  width: 100%; /* Chaque groupe prend 100% de la largeur visible */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  grid-template-rows: repeat(2, 1fr); /* 2 lignes */
   gap: 10px;
   padding: 10px;
   box-sizing: border-box;
-  flex-shrink: 0; /* Empêche de rétrécir */
+  flex-shrink: 0; /* Pour pas qu'il se rétrécisse */
 }
 
+/* ----- IMAGES ----- */
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -71,14 +69,13 @@ li a:hover {
   border-radius: 8px;
 }
 
-/* ----- FLÈCHES & THÈMES ----- */
+/* ----- THÈMES + FLÈCHES ----- */
 .themes-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
   gap: 20px;
-  position: relative;
 }
 
 .themes {
@@ -120,15 +117,7 @@ button.prev:hover, button.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-button.prev {
-  margin-right: 10px;
-}
-
-button.next {
-  margin-left: 10px;
-}
-
-/* ----- SECTIONS & FOOTER ----- */
+/* ----- PAGES ----- */
 section {
   padding: 20px;
   text-align: center;
