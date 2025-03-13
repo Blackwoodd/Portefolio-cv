@@ -67,12 +67,6 @@ li a.active::after {
   border-radius: 8px;
 }
 
-/* Cacher les anciennes flèches du carrousel */
-.carousel-container .prev,
-.carousel-container .next {
-  display: none;
-}
-
 /* ---------------- THEMES + FLECHES ---------------- */
 .themes-container {
   display: flex;
