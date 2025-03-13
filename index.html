@@ -15,7 +15,7 @@
 
     <main>
         <div class="carousel-container">
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <!-- <button class="prev" onclick="prevSlide()">&#10094;</button> -->
             <div class="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
@@ -32,12 +32,18 @@
                     </div>
                 </div>
             </div>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <!-- <button class="next" onclick="nextSlide()">&#10095;</button> -->
         </div>
 
-        <div class="themes">
-            <span class="theme active" onclick="goToSlide(0)">Noir & Blanc</span>
-            <span class="theme" onclick="goToSlide(1)">Couleur</span>
+        <div class="themes-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+        
+            <div class="themes">
+                <span class="theme active" onclick="goToSlide(0)">Noir & Blanc</span>
+                <span class="theme" onclick="goToSlide(1)">Couleur</span>
+            </div>
+        
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
 
         <section>
