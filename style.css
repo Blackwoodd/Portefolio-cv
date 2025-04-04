@@ -101,6 +101,36 @@ li a.active::after {
   }
 }
 
+/* Pour les écrans plus grands (comme les PC de bureau ou grands moniteurs) */
+@media (min-width: 1200px) {
+  .carousel-container {
+    max-width: 1200px; /* Ou plus, en fonction de tes préférences */
+    margin: auto; /* Centrer le carrousel */
+  }
+
+  .carousel-item {
+    width: 100%; /* Prendre toute la largeur disponible */
+    grid-template-columns: repeat(4, 1fr); /* Afficher 4 images sur une ligne */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto; /* Pour garder un ratio d'image correct */
+  }
+}
+
+/* Pour les très grands écrans (ex: 1440px ou plus) */
+@media (min-width: 1440px) {
+  .carousel-container {
+    max-width: 1440px; /* Limite pour un grand écran */
+  }
+
+  .carousel-item {
+    grid-template-columns: repeat(5, 1fr); /* Afficher 5 images si l'écran est encore plus large */
+  }
+}
+
+
 /* ---------------- THEMES + FLECHES ---------------- */
 .themes-container {
   display: flex;
