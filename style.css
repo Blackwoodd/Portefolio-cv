@@ -208,23 +208,4 @@ footer {
   margin-top: 40px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 768px) {
-  .carousel-container {
-      max-width: 90%;
-  }
 
-  .themes {
-      gap: 15px;
-  }
-
-  .theme {
-      font-size: 14px;
-  }
-
-  .themes-container .prev,
-  .themes-container .next {
-      font-size: 24px;
-      padding: 5px;
-  }
-}
