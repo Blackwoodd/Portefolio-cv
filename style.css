@@ -62,7 +62,7 @@ li a.active::after {
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
