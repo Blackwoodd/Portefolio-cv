@@ -4,7 +4,7 @@ const carouselInner = document.querySelector('.carousel-inner');
 const themes = document.querySelectorAll('.theme');
 
 function updateCarousel() {
-    const offset = -currentIndex * 50; // Décalage en pourcentage
+    const offset = -currentIndex * 33; // Décalage en pourcentage
     carouselInner.style.transform = `translateX(${offset}%)`;
 
     // Mettre à jour la classe active sur les thèmes
