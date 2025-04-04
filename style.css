@@ -183,4 +183,10 @@ footer {
   margin-top: 40px;
 }
 
+/* ---------------- INFORMATION PERSO ---------------- */
 
+.info b {
+  margin-left: 10px; /* Ajoute de l'espace entre les lignes */
+  margin-bottom: 10px;
+  display: inline-block; /* S'assurer que chaque élément est en bloc et non en ligne */
+}
