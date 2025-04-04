@@ -65,6 +65,13 @@ li a.active::after {
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1); /* zoom léger */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* petit effet d'ombre pour le relief */
+  z-index: 1;
 }
 
 /* ---------------- THEMES + FLECHES ---------------- */
