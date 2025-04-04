@@ -74,6 +74,33 @@ li a.active::after {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  .carousel-item {
+    width: 100%; /* Chaque groupe occupe la totalité de l'écran */
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les petits écrans */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* ---------------- THEMES + FLECHES ---------------- */
 .themes-container {
   display: flex;
