@@ -62,7 +62,7 @@ li a.active::after {
 }
 
 .carousel-item img {
-  width: 90%;
+  width: 10%;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -74,32 +74,7 @@ li a.active::after {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
-  .carousel-container {
-    max-width: 90%;
-  }
 
-  .carousel-item {
-    width: 100%; /* Chaque groupe occupe la totalité de l'écran */
-    grid-template-columns: 1fr; /* Une seule colonne */
-  }
-
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-item {
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les petits écrans */
-  }
-
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-}
 
 /* Pour les écrans plus grands (comme les PC de bureau ou grands moniteurs) */
 @media (min-width: 1300px) {
