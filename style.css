@@ -114,7 +114,7 @@ li a.active::after {
   }
 
   .carousel-item img {
-    width: 120%;
+    width: 110%;
     height: auto; /* Pour garder un ratio d'image correct */
   }
 }
