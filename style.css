@@ -110,23 +110,12 @@ li a.active::after {
 
   .carousel-item {
     width: 100%; /* Prendre toute la largeur disponible */
-    grid-template-columns: repeat(4, 1fr); /* Afficher 4 images sur une ligne */
+    grid-template-columns: repeat(2, 1fr); /* Afficher 4 images sur une ligne */
   }
 
   .carousel-item img {
-    width: 100%;
+    width: 200%;
     height: auto; /* Pour garder un ratio d'image correct */
-  }
-}
-
-/* Pour les très grands écrans (ex: 1440px ou plus) */
-@media (min-width: 1440px) {
-  .carousel-container {
-    max-width: 1440px; /* Limite pour un grand écran */
-  }
-
-  .carousel-item {
-    grid-template-columns: repeat(5, 1fr); /* Afficher 5 images si l'écran est encore plus large */
   }
 }
 
