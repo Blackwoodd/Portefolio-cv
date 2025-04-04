@@ -68,6 +68,18 @@ li a.active::after {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .carousel-item {
+    grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    grid-template-columns: 1fr; /* 1 image par ligne sur petits écrans */
+  }
+}
+
 /* ---------------- THEMES + FLECHES ---------------- */
 .themes-container {
   display: flex;
