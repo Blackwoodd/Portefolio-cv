@@ -102,9 +102,9 @@ li a.active::after {
 }
 
 /* Pour les écrans plus grands (comme les PC de bureau ou grands moniteurs) */
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .carousel-container {
-    max-width: 1200px; /* Ou plus, en fonction de tes préférences */
+    max-width: 1300px; /* Ou plus, en fonction de tes préférences */
     margin: auto; /* Centrer le carrousel */
   }
 
