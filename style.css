@@ -50,14 +50,14 @@ li a.active::after {
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 200%;
+  /* transition: transform 0.5s ease-in-out; */
+  width: 100%;
 }
 
 .carousel-item {
-  width: 100%; /* Chaque groupe occupe la moitié */
+  width: 100%; /* Chaque groupe occupe toute la page */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -65,7 +65,7 @@ li a.active::after {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-width: 100%;
+  border-radius: 8px;
 }
 
 /* ---------------- THEMES + FLECHES ---------------- */
