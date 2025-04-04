@@ -51,7 +51,7 @@ li a.active::after {
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 400%;
+  width: 100%;
 }
 
 .carousel-item {
