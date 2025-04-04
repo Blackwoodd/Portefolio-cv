@@ -87,7 +87,7 @@ li a.active::after {
   position: relative;
   padding-bottom: 5px;
   color: #333;
-  font-weight: 400;
+  font-weight: 200;
   transition: color 0.3s;
 }
 
