@@ -38,7 +38,7 @@ li a.active::after {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 200%;
   max-width: none;
   margin: auto;
 }
@@ -50,14 +50,14 @@ li a.active::after {
 
 .carousel-inner {
   display: flex;
-  /* transition: transform 0.5s ease-in-out; */
+  transition: transform 0.5s ease-in-out;
   width: 100%;
 }
 
 .carousel-item {
   width: 100%; /* Chaque groupe occupe toute la page */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
@@ -66,18 +66,6 @@ li a.active::after {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .carousel-item {
-    grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-item {
-    grid-template-columns: 1fr; /* 1 image par ligne sur petits écrans */
-  }
 }
 
 /* ---------------- THEMES + FLECHES ---------------- */
