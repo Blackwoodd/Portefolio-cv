@@ -39,7 +39,7 @@ li a.active::after {
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: none;
   margin: auto;
 }
 
@@ -51,11 +51,11 @@ li a.active::after {
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%;
+  width: 200%;
 }
 
 .carousel-item {
-  width: 50%; /* Chaque groupe occupe la moitié */
+  width: 100%; /* Chaque groupe occupe la moitié */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
