@@ -69,7 +69,7 @@ li a.active::after {
 }
 
 .carousel-item img:hover {
-  transform: scale(1.1); /* zoom léger */
+  transform: scale(2.1); /* zoom léger */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* petit effet d'ombre pour le relief */
   z-index: 1;
 }
