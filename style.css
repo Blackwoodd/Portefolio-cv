@@ -42,6 +42,7 @@ li a:hover {
 li a.active::after {
   content: "";
   position: absolute;
+  margin: 3px;
   left: 0;
   bottom: 0;
   width: 100%;
