@@ -201,6 +201,7 @@ footer {
 .photo_cv {
   width: 60%;
   margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo_cv img:hover {
