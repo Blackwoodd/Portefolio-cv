@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 /* ---------------- NAVIGATION ---------------- */
 /* Enlever les marges et les paddings pour que le menu prenne toute la largeur de la page */
 ul {
