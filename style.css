@@ -198,26 +198,7 @@ footer {
 
 /* ---------------- PAGE CV ---------------- */
 
-/* Style de la section pour centrer l'image */
 .photo_cv {
   width: 60%;
   margin: auto;
-  overflow: hidden;  /* Pour éviter que l'image dépasse */
-  position: relative;
-  text-align: center;
 }
-
-/* Style de l'image de base */
-.photo_cv img {
-  width: 100%;  /* Prend toute la largeur du conteneur */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* Le curseur change pour montrer qu'on peut cliquer */
-}
-
-/* Style au clic */
-.photo_cv img.zoomed {
-  transform: scale(1.1);  /* Zoom au clic */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  /* Ombre pour le relief */
-  z-index: 2;  /* Placer l'image au-dessus lors du zoom */
-}
-

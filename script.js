@@ -4,7 +4,7 @@ const carouselInner = document.querySelector('.carousel-inner');
 const themes = document.querySelectorAll('.theme');
 
 function updateCarousel() {
-    const offset = -currentIndex * 33.35; // Décalage en pourcentage
+    const offset = -currentIndex * 33.3; // Décalage en pourcentage
     carouselInner.style.transform = `translateX(${offset}%)`;
 
     // Mettre à jour la classe active sur les thèmes
@@ -31,8 +31,3 @@ function goToSlide(index) {
     currentIndex = index;
     updateCarousel();
 }
-
-function toggleZoom(image) {
-    image.classList.toggle('zoomed');  /* Active ou désactive l'effet de zoom */
-  }
-  
