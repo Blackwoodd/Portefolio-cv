@@ -31,3 +31,8 @@ function goToSlide(index) {
     currentIndex = index;
     updateCarousel();
 }
+
+function toggleZoom(image) {
+    image.classList.toggle('zoomed');  /* Active ou désactive l'effet de zoom */
+  }
+  
