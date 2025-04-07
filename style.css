@@ -191,9 +191,15 @@ footer {
   display: inline-block; /* S'assurer que chaque élément est en bloc et non en ligne */
 }
 
+.info_footer a {
+  color: inherit;       /* Prend la couleur du texte parent */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
 /* ---------------- PAGE CV ---------------- */
 
 .photo_cv {
   width: 60%;
   margin: auto;
 }
+
