@@ -193,3 +193,8 @@ footer {
 
 /* ---------------- PAGE CV ---------------- */
 
+.photo_cv {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
