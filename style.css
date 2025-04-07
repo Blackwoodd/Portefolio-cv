@@ -204,9 +204,13 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.photo_cv img:hover {
-  transform: scale(1.1); /* zoom léger */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* petit effet d'ombre pour le relief */
+.photo_cv img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo_cv img:active {
+  transform: scale(1.1); /* Zoom au clic */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre */
   z-index: 1;
 }
 
