@@ -54,6 +54,7 @@ li a.active::after {
 /* ---------------- CARROUSEL ---------------- */
 .carousel-container {
   display: flex;
+  padding-top: 20px;
   align-items: center;
   position: relative;
   width: 100%;
