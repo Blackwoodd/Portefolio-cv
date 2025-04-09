@@ -115,6 +115,16 @@ li a.active::after {
 
 
 /* ---------------- THEMES + FLECHES ---------------- */
+
+
+@media screen and (max-width: 768px) {
+
+  .themes span {
+    font-size: 14px; /* Réduire la taille de la police pour les petits écrans */
+  }
+}
+
+
 .themes-container {
   display: flex;
   justify-content: center;
