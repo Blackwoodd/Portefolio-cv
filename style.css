@@ -262,7 +262,7 @@ footer {
 .video-section h2 {
   font-size: 2em;
   margin-bottom: 30px;
-  color: #333;
+  color: #212121;
 }
 
 .video-container {
@@ -274,11 +274,3 @@ footer {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Effet d'encadrement */
 }
-
-/* .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
