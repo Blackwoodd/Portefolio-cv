@@ -254,7 +254,7 @@ footer {
 
 
 .video-section {
-  background-color: #f0f0f0; /* Fond gris clair */
+  background-color: #343434; /* Fond gris clair */
   padding: 50px 20px;
   text-align: center;
 }
@@ -262,7 +262,7 @@ footer {
 .video-section h2 {
   font-size: 2em;
   margin-bottom: 30px;
-  color: #212121;
+  color: #333;
 }
 
 .video-container {
