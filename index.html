@@ -3,76 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portefolio</title>
+    <title>Nathan Bechon | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <ul>
-        <li><a href="index.html" class="active">Mon Portefolio</a></li>
-        <li><a href="cv.html">Mon CV</a></li>
-        <li><a href="bandeDemo.html">Vidéo</a></li>
-    </ul>
+<body class="page-home">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html" class="active">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="bandeDemo.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="portrait.jpg" alt="Image 5">
-                        <img src="profile.jpg" alt="Image 6">
-                        <img src="couleur_americain.jpeg" alt="Image 7">
-                        <img src="couleur_tete.jpeg" alt="Image 8">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="corps.jpeg" alt="Image 5">
-                        <img src="couleur_buste.jpeg" alt="Image 6">
-                        <img src="couleur_americain.jpeg" alt="Image 7">
-                        <img src="couleur_tete.jpeg" alt="Image 8">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="noir_blanc.jpeg" alt="Image 1">
-                        <img src="noir_blanc_fenetre.jpeg" alt="Image 2">
-                        <img src="noir_blanc_veste_zoom.jpeg" alt="Image 3">
-                        <img src="noir_blanc_veste.jpeg" alt="Image 4">
+    <main class="layout">
+        <section class="hero panel">
+            <p class="eyebrow">Model Portfolio</p>
+            <h1>Nathan Bechon</h1>
+            <p class="hero-copy">Univers mode et artistique: portrait serre, prises en exterieur et noir et blanc.</p>
+
+            <div class="measurements" aria-label="Mensurations">
+                <span><strong>HEIGHT</strong> 176</span>
+                <span><strong>CHEST</strong> 93</span>
+                <span><strong>HIPS</strong> 78</span>
+                <span><strong>WAIST</strong> 75</span>
+                <span><strong>HAIR</strong> Brown</span>
+                <span><strong>EYES</strong> Brown</span>
+                <span><strong>SHOES</strong> 42</span>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="galerie-title">
+            <div class="section-head">
+                <h2 id="galerie-title">Galerie</h2>
+                <p>Trois directions visuelles pour presenter ton book de facon claire et impactante.</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="portrait.jpg" alt="Portrait serre en couleur">
+                            <img src="profile.jpg" alt="Portrait profile en lumiere douce">
+                            <img src="couleur_americain.jpeg" alt="Portrait plan americain en exterieur">
+                            <img src="couleur_tete.jpeg" alt="Gros plan visage en couleur">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="corps.jpeg" alt="Portrait plein corps en exterieur">
+                            <img src="couleur_buste.jpeg" alt="Portrait buste en couleur">
+                            <img src="couleur_americain.jpeg" alt="Portrait americain en exterieur">
+                            <img src="couleur_tete.jpeg" alt="Gros plan tete en lumiere naturelle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="noir_blanc.jpeg" alt="Portrait noir et blanc">
+                            <img src="noir_blanc_fenetre.jpeg" alt="Portrait noir et blanc pres d une fenetre">
+                            <img src="noir_blanc_veste_zoom.jpeg" alt="Zoom veste en noir et blanc">
+                            <img src="noir_blanc_veste.jpeg" alt="Portrait veste noir et blanc">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="themes-container">
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-        
-            <div class="themes">
-                <span class="theme active" onclick="goToSlide(0)">Portrait serré</span>
-                <span class="theme" onclick="goToSlide(1)">Extérieur</span>
-                <span class="theme" onclick="goToSlide(2)">Noir & Blanc</span>
+            <div class="themes-container">
+                <button class="prev" type="button" onclick="prevSlide()" aria-label="Theme precedent">&#10094;</button>
+
+                <div class="themes" role="tablist" aria-label="Themes photo">
+                    <button class="theme active" type="button" onclick="goToSlide(0)">Portrait serre</button>
+                    <button class="theme" type="button" onclick="goToSlide(1)">Exterieur</button>
+                    <button class="theme" type="button" onclick="goToSlide(2)">Noir et blanc</button>
+                </div>
+
+                <button class="next" type="button" onclick="nextSlide()" aria-label="Theme suivant">&#10095;</button>
             </div>
-        
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-
-        <section>
-            <h1>Nathan Bechon</h1>
-            <p class="info">
-              <b>HEIGHT</b>: 176  
-              <b>CHEST</b>: 93
-              <b>HIPS</b>: 78<br>
-              <b>WAIST</b>: 75
-              <b>HAIR</b>: BROWN 
-              <b>SHOES</b>: 42<br>
-              <b>EYES</b>: BROWN
-          </p>
         </section>
     </main>
 
-    <footer>
-        <div class="info_footer">
+    <footer class="site-footer">
+        <div class="info-footer">
             <p><a href="mailto:bechon.nathan@gmail.com">bechon.nathan@gmail.com</a></p>
             <p>07 81 57 30 80</p>
         </div>
-        <p>&copy; Portefolio Bechon Nathan 2025</p>
+        <p>&copy; 2026 Nathan Bechon</p>
     </footer>
 </body>
 </html>

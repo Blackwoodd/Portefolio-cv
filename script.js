@@ -1,30 +1,58 @@
 let currentIndex = 0;
-const totalSlides = document.querySelectorAll('.carousel-item').length;
 const carouselInner = document.querySelector('.carousel-inner');
+const slides = document.querySelectorAll('.carousel-item');
 const themes = document.querySelectorAll('.theme');
+const totalSlides = slides.length;
 
 function updateCarousel() {
-    const slideWidthPercent = 100 / totalSlides;
-    const offset = -currentIndex * slideWidthPercent;
-    carouselInner.style.transform = `translateX(${offset}%)`;
+  if (!carouselInner || totalSlides === 0) {
+    return;
+  }
 
-    // Mettre à jour la classe active sur les thèmes
-    themes.forEach((theme, index) => {
-        theme.classList.toggle('active', index === currentIndex);
-    });
+  carouselInner.style.transform = `translateX(${-currentIndex * 100}%)`;
+
+  themes.forEach((theme, index) => {
+    theme.classList.toggle('active', index === currentIndex);
+  });
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateCarousel();
+  if (totalSlides === 0) {
+    return;
+  }
+
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
 }
 
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateCarousel();
+  if (totalSlides === 0) {
+    return;
+  }
+
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateCarousel();
 }
 
 function goToSlide(index) {
-    currentIndex = index;
-    updateCarousel();
+  if (totalSlides === 0) {
+    return;
+  }
+
+  currentIndex = index;
+  updateCarousel();
+}
+
+if (totalSlides > 0) {
+  updateCarousel();
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+
+    if (event.key === 'ArrowLeft') {
+      prevSlide();
+    }
+  });
 }

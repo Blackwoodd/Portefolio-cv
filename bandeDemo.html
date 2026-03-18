@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bande Demo</title>
+    <title>Nathan Bechon | Bande Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Mon Portefolio</a></li>
-        <li><a href="cv.html" >Mon CV</a></li>
-        <li><a href="bandeDemo.html" class="active">Vidéo</a></li>
-    </ul>
-    
-    <main>
-        <section class="video-section">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="bandeDemo.html" class="active">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <section class="panel intro-panel">
+            <p class="eyebrow">Video Reel</p>
+            <h1>Bande demo</h1>
+            <p class="hero-copy">Selection de projets video pour presenter ma presence camera et mon jeu dans des registres differents.</p>
+        </section>
+
+        <section class="panel video-section">
             <h2>Presentation</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/DE2FFgldpks"
-                        title="YouTube video player" frameborder="0"
+                        title="Video presentation"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                 </iframe>
             </div>
         </section>
 
-        <section class="video-section">
-            <h2>Lettre d'adieu</h2>
+        <section class="panel video-section">
+            <h2>Lettre d adieu</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/fpeV39x6khw"
-                        title="YouTube video player" frameborder="0"
+                        title="Lettre d adieu"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                 </iframe>
             </div>
         </section>
     </main>
-    
-    
-    <footer>
-        <div class="info_footer">
+
+    <footer class="site-footer">
+        <div class="info-footer">
             <p><a href="mailto:bechon.nathan@gmail.com">bechon.nathan@gmail.com</a></p>
             <p>07 81 57 30 80</p>
         </div>
-        <p>&copy; Portefolio Bechon Nathan 2025</p>
+        <p>&copy; 2026 Nathan Bechon</p>
     </footer>
 </body>
 </html>
