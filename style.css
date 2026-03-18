@@ -245,18 +245,18 @@ h1 {
 }
 
 .carousel-item img {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: var(--radius-md);
   border: 1px solid rgba(30, 23, 18, 0.16);
   box-shadow: 0 12px 28px rgba(32, 25, 20, 0.13);
-  transition: transform 0.32s ease, box-shadow 0.32s ease, filter 0.32s ease;
+  transition: box-shadow 0.32s ease, filter 0.32s ease;
   filter: saturate(1.02) contrast(1.02);
 }
 
 .carousel-item img:hover {
-  transform: translateY(-7px);
   box-shadow: 0 24px 35px rgba(32, 25, 20, 0.2);
   filter: saturate(1.09) contrast(1.03);
 }
